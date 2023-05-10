@@ -1,0 +1,95 @@
+# main links
+#  상단 메뉴
+main:
+  - title: "Category"
+    url: /categories/
+  - title: "Project"
+    url: /projects/
+  - title: "Tag"
+    url: /tags/
+  - title: "Search"
+    url: /search/
+
+#  sidebar
+docs:
+  - title: "Javascript"
+    children:
+      - title: "ES6 문법"
+        url: javascript/ES6/
+
+      - title: "데이터 타입"
+        url: javascript/데이터타입/
+
+      - title: "연산자"
+        url: javascript/연산자/
+
+      # - title: "객체 리터럴"
+      #   url: javascript/연산자/
+
+      - title: "메소드"
+        url: javascript/배열/
+
+      - title: "- 배열 메소드"
+        url: javascript/배열/
+
+      # - title: "- 스코프"
+      #   url: javascript/배열/
+      - title: "var, let, const"
+        url: javascript/letconst/
+
+      # - title: "- 프로퍼티 어트리뷰트"
+      #   url: javascript/배열/
+
+      - title: "실행 컨텍스트"
+        url: javascript/실행컨텍스트/
+
+      - title: "클로저"
+        url: javascript/클로저/
+
+      - title: "클래스"
+        url: javascript/클래스/
+
+      - title: "브라우저 렌더링 과정"
+        url: javascript/렌더링/
+
+      - title: "DOM"
+        url: javascript/DOM/
+
+      - title: "이벤트"
+        url: javascript/이벤트/
+
+      - title: "비동기"
+        url: javascript/비동기프로그래밍/
+      - title: "- 동기와 비동기"
+        url: javascript/비동기프로그래밍/
+      - title: "- Ajax"
+        url: javascript/Ajax/
+      - title: "- JSON"
+        url: javascript/JSON/
+      - title: "- XMLHttpRequest"
+        url: javascript/XML/
+
+      - title: "REST API"
+        url: javascript/REST_API/
+
+      - title: "프로미스"
+        url: javascript/프로미스/
+
+      - title: "비동기 처리"
+        url: javascript/제너레이터/
+      - title: "- 제너레이터"
+        url: javascript/제너레이터/
+      - title: "- async/await"
+        url: javascript/async_await/
+
+      - title: "라이브러리"
+        url: javascript/라이브러리/
+
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
