@@ -37,14 +37,14 @@ docs:
   - title: CS
     children:
       - title: "알고리즘"
-        url: 알고리즘/
-        category: "알고리즘"
+        url: algorithms/
+        category: "algorithms"
       - title: "자료구조"
-        url: 자료구조/
-        category: "자료구조"
+        url: structure/
+        category: "structure"
       - title: "네트워크"
-        url: 네트워크/
-        category: "네트워크"
+        url: network/
+        category: "network"
   - title: ETC
     children:
       - title: "Git & Github"
