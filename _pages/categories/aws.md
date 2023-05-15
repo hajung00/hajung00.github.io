@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: "/aws"
+permalink: aws
 title: "AWS"
 author_profile: false
 sidebar:
@@ -8,4 +8,6 @@ sidebar:
 ---
 
 {% assign posts = site.categories.aws %}
-{% for post in site.posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% for post in posts %}
+{% include custom-archive-single.html type=entries_layout %}
+{% endfor %}
