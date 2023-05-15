@@ -8,6 +8,6 @@ sidebar:
 ---
 
 {% assign posts = site.categories.aws %}
-{% for post in posts %}
+{% for post in site.posts %}
 {% include custom-archive-single.html type=entries_layout %}
 {% endfor %}
