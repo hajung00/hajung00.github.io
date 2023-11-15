@@ -688,8 +688,11 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
-  border-right: 1px solid var(--sidebar-border-color);
+  background: url('/assets/img/background.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+  // background: var(--sidebar-bg);
+  // border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   &::-webkit-scrollbar {
@@ -739,7 +742,7 @@ $btn-mb: 0.5rem;
   .site-title {
     font-family: inherit;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     line-height: 1.2;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
@@ -749,13 +752,13 @@ $btn-mb: 0.5rem;
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      color: var(--site-title-color);
+      color: white;
     }
   }
 
   .site-subtitle {
-    font-size: 95%;
-    color: var(--site-subtitle-color);
+    font-size: 80%;
+    color: white;
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -766,7 +769,6 @@ $btn-mb: 0.5rem;
 
   ul {
     margin-bottom: 2rem;
-
     li.nav-item {
       opacity: 0.9;
       width: 100%;
@@ -775,14 +777,15 @@ $btn-mb: 0.5rem;
 
       a.nav-link {
         @include pt-pb(0.6rem);
-
+        color: white;
         display: flex;
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 600;
 
         &:hover {
-          background-color: var(--sidebar-hover-bg);
+          color: var(--sidebar-active-color);
+          // background-color: var(--sidebar-hover-bg);
         }
 
         i {
@@ -800,7 +803,7 @@ $btn-mb: 0.5rem;
       &.active {
         .nav-link {
           color: var(--sidebar-active-color);
-          background-color: var(--sidebar-hover-bg);
+          // background-color: var(--sidebar-hover-bg);
 
           span {
             opacity: 1;
