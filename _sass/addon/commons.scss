@@ -767,6 +767,7 @@ $btn-mb: 0.5rem;
 
   ul {
     margin-bottom: 2rem;
+
     li.nav-item {
       opacity: 0.9;
       width: 100%;
@@ -775,6 +776,7 @@ $btn-mb: 0.5rem;
 
       a.nav-link {
         @include pt-pb(0.6rem);
+
         color: white;
         display: flex;
         align-items: center;
