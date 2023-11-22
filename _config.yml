@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: 코스모스 # the main title
 
-tagline: 🌸front-end developer🌸 </br>코스모스처럼 활짝 필수있게 준비하는 과정을 담은 블로그입니다. # it will display as the sub-title
+tagline: 🌸front-end developer🌸 </br> 개발자로서의 계절은 봄입니다. 가을에 피는 코스모스처럼 활짝 필수있게 준비하는 과정을 담은 블로그입니다. # it will display as the sub-title
 
 # used by seo meta and the atom feed
 
@@ -33,7 +33,7 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: kim hajeong
+  name: Hajeong Kim
   email: gkwjd719@naver.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
