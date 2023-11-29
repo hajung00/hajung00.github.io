@@ -12,6 +12,12 @@ tags: [Work-Devlog, Fullcalendar]
 
 _자바스크립트 기반 오픈소스 라이브러리로 공식페이지에서는 "가장 유명한 자바스크립트 캘린더"라고 설명하고 있다._
 
+<br/>
+
+---
+
+<br/>
+
 > ### 사용 목적
 
 아래의 기능을 구현하기 위해 캘린더 라이브러리 사용
@@ -26,9 +32,21 @@ _자바스크립트 기반 오픈소스 라이브러리로 공식페이지에서
     > event 3) 날짜 클릭 시, 해당 달이 아닐 경우 해당하는 달로 이동<br/>
     > event 4) 달력 title 변경
 
+<br/>
+
+---
+
+<br/>
+
 > ### 선택한 이유
 
 웹앱 개발 달력이나 일정, 스케줄러 관련 구현 시 가장 많이 사용하는 라이브러리이기도 하고, 디자인이 가장 비슷하고 필요한 기능도 제공하고 있어 사용하였다.
+
+<br/>
+
+---
+
+<br/>
 
 > ### 사용 방법
 
@@ -56,6 +74,12 @@ export default class DemoApp extends React.Component {
 }
 ```
 
+<br/>
+
+---
+
+<br/>
+
 > ### 📌 기능1) 일, 주, 달, 연간 달력 표시
 
 - plugin download 및 추가
@@ -78,6 +102,12 @@ headerToolbar={[
 
 ![image](https://github.com/hajung00/React-Sleact/assets/66300154/c84aea4d-9b84-423a-acf1-a108472e90a0)
 
+<br/>
+
+---
+
+<br/>
+
 > ### 📌 기능2) 사용자의 일정 캘린더에 표시
 
 - useQuery로 해당 계정의 모든 일정(schedule)을 가져온다
@@ -97,6 +127,12 @@ evnet={schedule.map((data,i)=>{
 🖥️ 적용 화면
 
 ![image](https://github.com/hajung00/React-Sleact/assets/66300154/a18e8365-e2eb-4d81-a8b3-e5b05628534a)
+
+<br/>
+
+---
+
+<br/>
 
 > ### 📌 기능3) 날짜 클릭 시, 이벤트 실행
 

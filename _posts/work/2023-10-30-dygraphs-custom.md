@@ -17,6 +17,12 @@ tags: [Work-Devlog, Dygraphs, Custom]
 _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 ![dygraphs기본-기능_1](https://github.com/hajung00/React-Sleact/assets/66300154/b738ab0a-6ce1-4d32-86a6-e85f38a864ba)
 
+<br/>
+
+---
+
+<br/>
+
 > ### 📌 기능1) 구간 선택
 
 - 조건
@@ -95,6 +101,12 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 
 ![중간값 선택](https://github.com/hajung00/React-Sleact/assets/66300154/6744fddd-54d8-4fde-9d09-01d887f61b52)
 
+<br/>
+
+---
+
+<br/>
+
 > ### 📌 기능2) 우클릭 시, 선택한 구간 삭제
 
 1. mousedown시, 우클릭일경우, deleteCheckpoint실행
@@ -104,6 +116,12 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 🖥️ 선택한 구간 삭제 시연 영상
 
 ![선택한 구간 삭제](https://github.com/hajung00/React-Sleact/assets/66300154/67a19cf8-9dd6-4c02-a147-ce131ef5fc72)
+
+<br/>
+
+---
+
+<br/>
 
 > ### 📌 기능3) x축 ->시간, y축 -> 채널 이름
 
