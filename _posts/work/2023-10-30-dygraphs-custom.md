@@ -12,67 +12,100 @@ tags: [Work-Devlog, Dygraphs, Custom]
 
 1. 드래그 실시간 기능
 2. Zoom 기능
-3. y축 드래그 기능
+3. y축 드래그, Zoom 기능
 
-> ### 기능1) 구간 선택
+_[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
+![dygraphs기본-기능_1](https://github.com/hajung00/React-Sleact/assets/66300154/b738ab0a-6ce1-4d32-86a6-e85f38a864ba)
+
+> ### 📌 기능1) 구간 선택
 
 - 조건
-  조건 1) 같은 지점 클릭 시, 구간으로 추가하지 않음(mousedown = mouseup)
-  조건 2) 기존 선택한 구간의 조정
-  조건 3) 기존 선택한 구간을 새로 선택한 구간이 포함한다면 기존 구간의 범위를 변경
+
+  - 조건 1) 같은 지점 클릭 시, 구간으로 추가하지 않음(mousedown === mouseup)
+  - 조건 2) 기존에 선택한 구간의 조정
+  - 조건 3) 기존에 선택한 구간을 새로 선택한 구간이 포함한다면 포함하는 범위로 변경
+  - 조건 4) 기존에 선택한 구간의 중간값을 선택하지 못하도록 설정
+
+<br/>
 
 - 전체적인 flow
 
-1. Zoom기능 제거
-2. 선택한 구간 allConent에 저장
-   - 위의 조건에 만족하지 않고 새로운 구간의 추가 시, allContent에 저장
-3. 선택한 구간 화면에 표시
-   - mousedown의 지점에 line그리고, mouseup의 지점에 라인을 그리고 끝점과 시작점의 차이를 fillRect로 채워준다.
+  1.  Zoom기능 제거
+  2.  선택한 구간 allConent에 저장
 
-- allContent에 추가되는 경우에만 화면에 표시한다.
+      - 위의 조건에 만족하지 않고 새로운 구간의 추가 시, allContent에 저장
 
-- 구간 선택 시연 영상
-<!-- 비디오 삽입 -->
+  3.  선택한 구간 화면에 표시
 
-#### Case1) 기존 선택한 구간의 시작, 끝 조정일 경우
+      - allContent에 추가되는 경우에만 화면에 표시한다.
+      - mousedown의 지점에 line그리고, mouseup의 지점에 라인을 그리고 끝점과 시작점의 차이를 fillRect로 채워준다.
 
-1. mousedown시, 어떤 content를 조정하는지 currentConent에 저장, 시작점인지 끝점의 조정인지 방향 sectionDirection에 저장 (시작점 = front, 끝점 = back)
-2. setcitonDirection에 따라 시작/끝 점, 포함하는 구간 다시 그려줌
-   Case1) 시작 점을 조정할 경우 currentContent 다 지우고 새롭게 mouseup한 부분을 시작점으로 잡고 그려준다.
-   Case2) 끝 점을 조정할 경우 currentContent 다 지우고 새롭게 mouseup한 부분을 끝점으로 잡고 그려준다.
-3. mouseup시 allContent에서 해당 content의 startX, endX 값 변경해줌
-   [영상 넣기]
+<br/>
 
-#### Case2) 같은 부분 클릭 시, allContent에 추가하지 않음
+- 🖥️ 구간 선택 시연 영상
 
-- mouseup시, 시작과 끝점 비교하여 같은 값인지 판별
-  [영상 넣기]
+  ![구간 선택 시연 영상](https://github.com/hajung00/React-Sleact/assets/66300154/ad469d04-bda6-4ce7-aa95-8e01dfcda689)
 
-#### Case3) 기존구간을 새로 선택한 구간이 포함하는 경우 기존 content지우고 새롭게 추가
+#### Case1) 같은 지점 클릭 시, 화면에 표시 X
 
-1. mousedown시, 클릭한 지점이 allContent의 content에 완전히 포함되는 경우
+- mouseup시, 시작과 끝점 비교하여 같은 값인지 판별 후 같을 경우 allContent에 추가하지 않아 화면에 표시 안됨.
 
-- if (새로운 시작점< content의 시작점 && content의 끝점< 새로운 끝점)
+🖥️ 같은 지점 선택 시연 영상
+
+![같은 지점 클릭](https://github.com/hajung00/React-Sleact/assets/66300154/92de397f-26ea-4ff7-ae49-be30a69afaa4)
+
+#### Case2) 기존에 선택한 구간의 시작, 끝 지점 조정일 경우
+
+- flow
+
+  1.  mousedown시, 어떤 content를 조정하는지 currentConent에 저장
+
+  2.  mousedown시, 시작점인지 끝점의 조정인지 방향을 sectionDirection에 저장 (시작점 = front, 끝점 = back)
+
+  3.  mouseup시, setcitonDirection에 따라 시작/끝 점, 포함하는 구간 다시 그려줌
+
+      - case1) 시작 점을 조정할 경우 currentContent 다 지우고 새롭게 mouseup한 부분을 시작점으로 잡고 그려준다.
+      - case2) 끝 점을 조정할 경우 currentContent 다 지우고 새롭게 mouseup한 부분을 끝점으로 잡고 그려준다.
+
+  4.  mouseup시, allContent에서 해당 content의 startX, endX 값 변경해줌
+
+🖥️ 구간 조정 시연 영상
+
+![구간 조정](https://github.com/hajung00/React-Sleact/assets/66300154/e06126a0-2c71-4c0a-856e-1a9b284002a7)
+
+#### Case3) 기존 구간을 새로 선택한 구간이 포함하는 경우
+
+1. mouseup시, 클릭한 지점이 allContent의 content에 완전히 포함되는 경우
+
+   - if (새로운 시작점< content의 시작점 && content의 끝점< 새로운 끝점)
 
 2. 기존 content의 구간 지우고, allContent에서 제거
-3. mouseup부분에서 새로 선택한 구간 allContent에 push
-   [영상 넣기]
 
-#### Case4) 이미 선택된 구간의 중간값을 선택할 경우 allContent에 추가하지 않음
+3. 새로 선택한 구간 allContent에 push
 
-- mousedown시, 클릭한 지점이 allContent의 하나의 content에 포함되는(중간값) 경우 값 추가, 화면에 그리는 부분 실행되지 않도록 설정
-  [영상 넣기]
+🖥️ 구간 포함 시연 영상
 
-> ### 기능2) 우클릭 시, 선택한 구간 삭제
+![구간 포함](https://github.com/hajung00/React-Sleact/assets/66300154/3d5f2d48-92d9-414f-b2af-dd00cc2e438e)
+
+#### Case4) 이미 선택된 구간의 중간값을 선택할 경우
+
+- mousedown시, 클릭한 지점이 allContent의 하나의 content에 포함되는(중간값) 경우 값 추가 X, 화면에 그리는 부분 실행되지 않도록 설정
+
+🖥️ 중간값 선택 시연 영상
+
+![중간값 선택](https://github.com/hajung00/React-Sleact/assets/66300154/6744fddd-54d8-4fde-9d09-01d887f61b52)
+
+> ### 📌 기능2) 우클릭 시, 선택한 구간 삭제
 
 1. mousedown시, 우클릭일경우, deleteCheckpoint실행
 2. 삭제할 구간을 찾아 allContent에서 제거
 3. 삭제한 구간 화면에서 제거
 
-- clearRect로 화면 지우기
-  [영상 넣기]
+🖥️ 선택한 구간 삭제 시연 영상
 
-> ### 기능3) x축 ->시간, y축 -> 채널 이름
+![선택한 구간 삭제](https://github.com/hajung00/React-Sleact/assets/66300154/67a19cf8-9dd6-4c02-a147-ce131ef5fc72)
+
+> ### 📌 기능3) x축 ->시간, y축 -> 채널 이름
 
 1. ticks 설정하는 부분에서 x축 samplingrate만큼 나누기
 
