@@ -6,7 +6,7 @@ categories: [Study, Javascript]
 tags: [Javascript]
 ---
 
-> ### Javascript와 Proptotype
+> ## Javascript와 Proptotype
 
 **JavaScript 객체 지향 언어**이다.
 
@@ -54,9 +54,9 @@ Prototype을 알아보기 전에 **javascript의 함수와 객체 내부 구조�
 
 <br/>
 
-> ### 함수와 객체 내부 구조
+> ## 함수와 객체 내부 구조
 
-1. 함수와 객체 내부 구조
+- 함수와 객체 내부 구조
 
 ![image](https://github.com/hajung00/React-Sleact/assets/66300154/b033ab99-3ac8-4fe7-a482-ae7b214fe8d4)
 
@@ -92,7 +92,7 @@ Const jisoo = new Person();
 
 <br/>
 
-> ### 프로토타입 객체란?
+> ## 프로토타입 객체란?
 
 함수를 정의하면 생성되는 객체로 자신이 다른 객체의 원형이 되는 객체를 말한다.
 
@@ -121,7 +121,7 @@ Console.log(jisoo.getType()) // 인간
 
 <br/>
 
-> ### Prototype이란?
+> ## Prototype이란?
 
 프로토타입은 크게 두가지로 해석된다.
 
@@ -137,7 +137,7 @@ Console.log(jisoo.getType()) // 인간
 
 <br/>
 
-> ### 코드의 재사용
+> ## 코드의 재사용
 
 **Javascript는 객체를 상속**하기 위해서 **객체 원형인 프로토타입이라는 방식**을 사용한다.
 
@@ -147,11 +147,11 @@ Console.log(jisoo.getType()) // 인간
 
 <br/>
 
-#### prototype vs class
+### prototype vs class
 
 상황 a. Animal 의 기능을 재사용하여 Cat 과 Dog 라는 새로운 객체 생성자를 만든다고 가정
 
-##### 1. prototype
+#### 1. prototype
 
 - prototype으로 속성, 메서드 정의
 
@@ -188,7 +188,7 @@ cat.say();
 
 ---
 
-##### 2. class
+#### 2. class
 
 - 클래스 내부에 메서드를 생성하면 자동으로 prototype으로 등록
 
@@ -231,7 +231,7 @@ cat.say();
 
 <br/>
 
-> ### 📑 참고자료
+> ## 📑 참고자료
 
 [[JS] Prototype이란?](https://velog.io/@turtle601/Prototype%EC%9D%B4%EB%9E%80)
 

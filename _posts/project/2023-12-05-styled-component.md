@@ -6,7 +6,7 @@ categories: [Project, PT 예약 사이트]
 tags: [Next.js, styled-components, 에러 해결]
 ---
 
-> ### 에러 상황
+> ## 에러 상황
 
 ![image](https://github.com/hajung00/React-Sleact/assets/66300154/861e1fc4-ceb5-4ce7-860d-7435e7f9be52)
 
@@ -21,7 +21,7 @@ tags: [Next.js, styled-components, 에러 해결]
 
 <br/>
 
-> ### 원인
+> ## 원인
 
 Next 공식문서를 보니까 styled-component는 어느정도 해결이 되어 있으므로 emotion과 매우 유사한 방식으로 개선하고 싶다면 styled component를 사용하는 것을 추천한다하여 styled-component로 변경하였고 next에서도 이와 같은 에러가 발생할 수 있어 styled-component 설정도 해주었다.
 
@@ -43,17 +43,17 @@ Next.js는 첫 페이지 로드가 SSR로 동작하기 때문에, 서버에서 �
 
 <br/>
 
-> ### 해결 방법
+> ## 해결 방법
 
-#### 방법 1. babel-plugin-styled-components
+### 방법 1. babel-plugin-styled-components
 
-##### 1. 설치
+#### 1. 설치
 
 ```
  $ npm I –D babel-plugin-styled-components
 ```
 
-##### 2. babelrc 설정
+#### 2. babelrc 설정
 
 프로젝트 루트에 .babelrc를 생성한 뒤 설정을 추가하고, 서버를 재실행합니다.
 
@@ -72,7 +72,7 @@ Next.js는 첫 페이지 로드가 SSR로 동작하기 때문에, 서버에서 �
 }
 ```
 
-##### 3. \_document.tsx
+#### 3. \_document.tsx
 
 Next.js에서 styled-components를 사용할 때 \_document를 따로 설정해서 SSR될 때 CSS가 head에 주입되도록 해야 한다. 만약 따로 설정하지 않는다면, styled-components가 적용되지 않은 상태로 렌더링될 수 있다.
 
@@ -114,7 +114,7 @@ export default class MyDocument extends Document {
 
 ---
 
-#### 방법 2. next.config.js 옵션 설정
+### 방법 2. next.config.js 옵션 설정
 
 Next.js 최신 버전에서는 styled-components의 ssr를 잘 지원해주므로, Next.js의 컴파일러 옵션만으로 간단하게 해결할 수 있다.
 
@@ -134,7 +134,7 @@ module.exports = {
 
 <br/>
 
-> ### 해결되지 않는 문제
+> ## 해결되지 않는 문제
 
 ![ezgif com-video-to-gif](https://github.com/hajung00/React-Sleact/assets/66300154/f5aa80fe-53f0-42b8-af7e-b1a23647da2b)
 
@@ -148,11 +148,11 @@ styled-component를 next.config로 ssr 설정을 해주었지만 적용이 되�
 
 <br/>
 
-> ### 해결
+> ## 해결
 
 공식 문서를 확인 후 해결하였다.
 
-#### 1. root에서 lib 폴더를 생성
+### 1. root에서 lib 폴더를 생성
 
 ```javascript
 // lib/registry.tsx
@@ -187,7 +187,7 @@ export default function StyledComponentsRegistry({
 }
 ```
 
-#### 2. app/layout에 lib/registry 세팅
+### 2. app/layout에 lib/registry 세팅
 
 ```javascript
 // app / layout.tsx;
@@ -208,7 +208,7 @@ export default function RootLayout({
 }
 ```
 
-> ### 📑 참고 자료
+> ## 📑 참고 자료
 
 [[Next.js] Next.js에서 Prop `className` did not match 경고가 뜨는 이유](https://tesseractjh.tistory.com/164)
 

@@ -8,7 +8,7 @@ tags: [Work-Devlog, SWR, React-Query]
 
 <!-- 프로젝트 작업하면서 했던 고민, 어떻게 해결했는지에 대한 내용이 담겨져있습니다. -->
 
-> ### SWR과 React-Query
+> ## SWR과 React-Query
 
 **SWR**
 
@@ -24,7 +24,7 @@ tags: [Work-Devlog, SWR, React-Query]
 
 <br/>
 
-> ### 사용 목적
+> ## 사용 목적
 
 서버로부터 받아오는 데이터를 관리하기 위해 **서버 상태 관리를 위한 라이브러리**를 찾아보았다.
 
@@ -40,11 +40,11 @@ _Redux에 대한 내용은 [Redux의 동작원리 및 문제점](https://hajung0
 
 <br/>
 
-> ### 사용 방법
+> ## 사용 방법
 
 - next.js 기준으로 swr과 react-query의 사용법을 알아보았다.
 
-#### 1. SWR
+### 1. SWR
 
 - **key를 url로써 fetcher에 넘겨주는 방식**
 
@@ -55,7 +55,7 @@ const fetcher = (url: string) => axios.get(url).then((res) => res.data);
 const { data, isValidating, error, mutate } = useSWR(`/api/allassets`, fetcher);
 ```
 
-#### 2. React-Query
+### 2. React-Query
 
 - **data fetching을 직접 구현한 fetcher**을 넘겨받는다.
 
@@ -97,7 +97,7 @@ const { isLoading, error, data, isFetching } = useQuery("assets", fetcher);
 
 <br/>
 
-> ### 주요 기능 차이
+> ## 주요 기능 차이
 
 **1) Status**
 
@@ -155,7 +155,7 @@ SWR과 React Query는 모두 뮤테이션이라는 개념을 가지고 있다. �
 
 <br/>
 
-> ### 요약
+> ## 요약
 
 **간단하게 데이터를 가져오기에는 SWR가 좋고, 데이터 캐싱 및 더 많은 제어가 필요한 경우에는 React Query가 좋다**고 할 수 있다.
 
@@ -167,7 +167,7 @@ SWR과 React Query는 모두 뮤테이션이라는 개념을 가지고 있다. �
 
 <br/>
 
-> ### 프로젝트의 적합성 판단
+> ## 프로젝트의 적합성 판단
 
 **SWR은 주로 get요청에 사용**된다. 하지만 프로젝트에서 유저 등록, 스케줄 등록, 파일 업로드 등 **post 요청이 많이 사용**되는 부분,
 
@@ -181,7 +181,7 @@ SWR과 React Query는 모두 뮤테이션이라는 개념을 가지고 있다. �
 
 <br/>
 
-> ### 📑 참고 자료
+> ## 📑 참고 자료
 
 [SWR vs React-Query, 서버데이터 관리](https://velog.io/@turtlemana/SWR-vs-React-Query-%EC%84%9C%EB%B2%84%EB%8D%B0%EC%9D%B4%ED%84%B0-%EA%B4%80%EB%A6%AC#swr-react-query-%EC%99%9C-%EC%93%B0%EB%8A%94%EA%B1%B8%EA%B9%8C)
 

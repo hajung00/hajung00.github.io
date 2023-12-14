@@ -8,15 +8,15 @@ tags: [Work-Devlog, useEffect, 에러 해결]
 
 <!-- 프로젝트 작업하면서 했던 고민, 어떻게 해결했는지에 대한 내용이 담겨져있습니다. -->
 
-> ### Report 페이지 기능
+> ## Report 페이지 기능
 
-#### 1. 선택한 파일에서 진행한 분석 종류를 select로 선택할 수 있다.
+### 1. 선택한 파일에서 진행한 분석 종류를 select로 선택할 수 있다.
 
 - 초기값 = Preprocess
 
 <img src="https://github.com/hajung00/React-Sleact/assets/66300154/60f9cf05-25ad-4e57-880e-ead105a322ec" width="90%" height="50%" alt="image"/>
 
-#### 2. select에서 선택한 분석 종류의 결과지를 보여준다.
+### 2. select에서 선택한 분석 종류의 결과지를 보여준다.
 
 - 분석 종류가 변경될 때마다 각 분석에 해당하는 결과지를 가져와야 한다.
 
@@ -32,13 +32,13 @@ tags: [Work-Devlog, useEffect, 에러 해결]
 
 <br/>
 
-> ### Report 페이지 구조 및 컴포넌트 별 기능
+> ## Report 페이지 구조 및 컴포넌트 별 기능
 
-#### 📚 구조
+### 📚 구조
 
 <img src="https://github.com/hajung00/SidePJ-next-node-full-sns/assets/66300154/6d42320e-5644-45d6-89d4-f1fab1aafc40" width="80%" height="50%" alt="image"/>
 
-#### 📚 컴포넌트 별 기능
+### 📚 컴포넌트 별 기능
 
 report
 
@@ -63,7 +63,7 @@ ReportLayout:
 
 <br/>
 
-> ### ❗문제 상황
+> ## ❗문제 상황
 
 - ReportLayout에서 결과지 생성을 위한 정보를 S3에서 받아오는데 **요청이 2번 보내지는 것을 확인**
 
@@ -75,7 +75,7 @@ ReportLayout:
 
 <br/>
 
-> ### ❗원인
+> ## ❗원인
 
 - ReportLayout에서 fileid가 변경될 때 정보를 다시 받아오는데 **이전의 분석 종류가 초기화 되기 전에 실행되고 초기화 후에 실행되어 요청이 2번** 감.
 
@@ -92,7 +92,7 @@ ReportLayout:
 
 <br/>
 
-> ### 💡문제 해결
+> ## 💡문제 해결
 
 - 하위 컴포넌트의 useEffect가 먼저 실행된다면 젤 **하위에서 초기화**를 진행시키면 될 것 같았다.
 

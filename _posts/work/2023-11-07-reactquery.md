@@ -8,7 +8,7 @@ tags: [Work-Devlog, React-Query]
 
 <!-- 프로젝트 작업하면서 했던 고민, 어떻게 해결했는지에 대한 내용이 담겨져있습니다. -->
 
-> ### React-Query란?
+> ## React-Query란?
 
 _리액트 애플리케이션에 데이터를 불러오고 캐싱하며, 서버 데이터와의 동기화 및 업데이트 하는 작업을 <br/> 개발자가 쉽고 간단하게 할 수 있도록 도와주는 라이브러리이다._
 
@@ -18,7 +18,7 @@ _리액트 애플리케이션에 데이터를 불러오고 캐싱하며, 서버 
 
 <br/>
 
-> ### 사용 목적
+> ## 사용 목적
 
 서버로부터 받아오는 데이터를 관리하기 위해 **서버 상태 관리를 위한 라이브러리**를 찾아보았다.
 
@@ -34,9 +34,9 @@ _SWR과 React-Query의 차이에 대한 내용은 [SWR과 React-Query 비교하�
 
 <br/>
 
-> ### 사용 방법
+> ## 사용 방법
 
-#### 1. 설치
+### 1. 설치
 
 ```
  $ npm install @tanstack/react-query @tanstack/react-query-devtools
@@ -44,7 +44,7 @@ _SWR과 React-Query의 차이에 대한 내용은 [SWR과 React-Query 비교하�
 
 <br/>
 
-#### 2. 적용하기
+### 2. 적용하기
 
 ```javascript
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -62,11 +62,11 @@ function App({ Component, pageProps }) {
 
 <br/>
 
-#### 3. React-Query SSR에 적용하기
+### 3. React-Query SSR에 적용하기
 
 - React-Query로 **SSR을 적용하는 방법**은 **InitialData 속성 사용, Hydration** 두가지가 존재한다.
 
-  ##### 방법 1. InitialData
+  #### 방법 1. InitialData
 
   SSR 메서드로 불러온 **응답을 React Query 기본값**으로 넣어주는 방법
 
@@ -91,7 +91,7 @@ function App({ Component, pageProps }) {
 
     ***
 
-  ##### 방법 2. Hydration
+  #### 방법 2. Hydration
 
   **SSR 내에서 prefetch**를 통해 쿼리를 불러온 뒤, **queryClient에서 dehydrate한 상태값으로 페이지에 전달**
 
@@ -143,7 +143,7 @@ function App({ Component, pageProps }) {
 
 <br/>
 
-#### 4. 데이터 Get - useQuery
+### 4. 데이터 Get - useQuery
 
 ```javascript
 import { useQuery } from "react-query";
@@ -178,7 +178,7 @@ const { data, isLoading, error } = useQuery(queryKey, queryFn, options);
 
 <br/>
 
-#### 5. 데이터 Post - useMutate
+### 5. 데이터 Post - useMutate
 
 ```javascript
 import { useMutation } from "react-query";
