@@ -139,8 +139,8 @@ console.log(user2.getFullName()); // Neo Anderson
 ```
 
 **일반 함수(fnUser)에서의 this**는 **getFullName함수가 호출 될 때 결정**되어 "Heropy Part"가 출력되는 것을 볼 수 있다.
-**
-반면에 **화살표 함수(arrUser)의 this**는 언제나 상위 스코프의 this를 가리키기 때문에 **함수가 정의될 때 결정되며 호출될 때 변경되지 않는다.\*\*
+
+반면에 **화살표 함수(arrUser)의 this**는 언제나 상위 스코프의 this를 가리키기 때문에 **함수가 정의될 때 결정되며 호출될 때 변경되지 않는다.**
 
 <br/>
 
