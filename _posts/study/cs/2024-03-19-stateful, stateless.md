@@ -1,7 +1,7 @@
 ---
 title: Stateful / Stateless 차이점
 author: cotes
-date: 2024-03-18 01:33:00 +0800
+date: 2024-03-19 01:33:00 +0800
 categories: [Study, CS]
 tags: [CS, 네트워크]
 ---
