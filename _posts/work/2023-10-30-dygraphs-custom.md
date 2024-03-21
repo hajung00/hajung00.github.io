@@ -15,7 +15,7 @@ tags: [Work-Devlog, Dygraphs, Custom]
 3. y축 드래그, Zoom 기능
 
 _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
-![dygraphs기본-기능_1](https://github.com/hajung00/React-Sleact/assets/66300154/b738ab0a-6ce1-4d32-86a6-e85f38a864ba)
+<img src="https://github.com/hajung00/hajung00.github.io/assets/66300154/47cd0de9-caf1-4d89-8a8c-3bd4fe536471" width="60%" height="40%" alt="image" />
 
 <br/>
 

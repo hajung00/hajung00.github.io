@@ -8,7 +8,7 @@ tags: [Next.js, styled-components, 에러 해결]
 
 > ## 에러 상황
 
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/861e1fc4-ceb5-4ce7-860d-7435e7f9be52)
+![image](https://github.com/hajung00/hajung00.github.io/assets/66300154/861e1fc4-ceb5-4ce7-860d-7435e7f9be52)
 
 처음에는 서버와 클라이언트의 클래스명이 다르다고 나와서 핫 리로딩이 적용되지 않아 발생하는 문제인 줄 알았지만 next.js 13에서 emotion 관련된 해결이 안된 것으로 보인다.
 
@@ -136,7 +136,7 @@ module.exports = {
 
 > ## 해결되지 않는 문제
 
-![ezgif com-video-to-gif](https://github.com/hajung00/React-Sleact/assets/66300154/f5aa80fe-53f0-42b8-af7e-b1a23647da2b)
+![ezgif com-video-to-gif](https://github.com/hajung00/hajung00.github.io/assets/66300154/f5aa80fe-53f0-42b8-af7e-b1a23647da2b)
 
 styled-component를 next.config로 ssr 설정을 해주었지만 적용이 되지 않고 깜빡임이 발생되었다.
 
