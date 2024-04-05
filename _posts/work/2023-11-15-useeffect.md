@@ -14,17 +14,15 @@ tags: [Work-Devlog, useEffect, 에러 해결]
 
 - 초기값 = Preprocess
 
-<img src="https://github.com/hajung00/React-Sleact/assets/66300154/60f9cf05-25ad-4e57-880e-ead105a322ec" width="90%" height="50%" alt="image"/>
+![그림4](https://github.com/hajung00/SidePJ-next-node-full-sns/assets/66300154/836e87e3-0ee6-4b91-aa20-715f01380a17)
 
 ### 2. select에서 선택한 분석 종류의 결과지를 보여준다.
 
 - 분석 종류가 변경될 때마다 각 분석에 해당하는 결과지를 가져와야 한다.
 
-<img src="https://github.com/hajung00/React-Sleact/assets/66300154/c99e0974-ebed-4db0-8e1e-cdfe9ca04511" width="90%" height="50%" alt="image"/>
-
 🖥️ 적용 화면
 
-<img src="https://github.com/hajung00/React-Sleact/assets/66300154/596262ff-6702-4b2c-b1e8-6c5d89c34805" width="90%" height="50%" alt="image"/>
+![dacbaf98-aaee-40ec-8107-318f3dce83ad](https://github.com/hajung00/SidePJ-next-node-full-sns/assets/66300154/dd49d9fe-c1b2-444d-8f8b-33a3365173df)
 
 <br/>
 
