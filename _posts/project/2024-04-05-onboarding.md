@@ -12,6 +12,8 @@ Americanote는 웹앱 서비스로 스플레시, 온보딩 화면을 제작하�
 
 > ## 스플래시(Splash)
 
+<img src="https://github.com/hajung00/hajung00.github.io/assets/66300154/c168f689-229f-484e-9c2e-380a3fc4ff26" width="60%" height="30%" alt="image"/>
+
 **스플래시는 앱을 실행할 때 가장 먼저 표시되는 화면**이다. 보편적으로 로고 또는 간단한 서비스 소개와 함께 앞으로 이용하게 될 앱의 전반적인 분위기를 설정한다. 스플래시 화면의 주 목적은 다음과 같다.
 
 **브랜딩**
@@ -27,6 +29,8 @@ Americanote는 웹앱 서비스로 스플레시, 온보딩 화면을 제작하�
 <br/>
 
 > ## 온보딩(Onboarding)
+
+<img src="https://github.com/hajung00/hajung00.github.io/assets/66300154/49bef69a-ccda-4b74-96a5-7e06a9c5cbf0" width="70%" height="30%" alt="image"/>
 
 온보딩 화면은 스플래시 화면 다음 단계이다. 이 앱의 목적은 앱의 핵심 기능에 대한 개요를 제공하는 것이다. 온보딩 화면의 목적은 다음과 같다.
 
@@ -165,6 +169,8 @@ Americanote는 웹앱 서비스로 스플레시, 온보딩 화면을 제작하�
     ```
 
 ### 🖥️ 적용 화면
+
+![-Clipchamp5-ezgif com-video-to-gif-converter](https://github.com/hajung00/hajung00.github.io/assets/66300154/80f55acf-fd28-4429-9c8c-86c363ac1a76)
 
 <br/>
 
