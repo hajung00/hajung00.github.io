@@ -40,7 +40,7 @@ console.log(fruits.includes("Banana"));
 
 - mdn 문서
 
-<img src="https://github.com/hajung00/React-Sleact/assets/66300154/44f5ec19-81fb-4ae9-b9ab-d4910e092dfa" width="30%" height="40%" alt="image"/>
+<img src="https://github.com/hajung00/hajung00.github.io/assets/66300154/7e998516-25b0-4eaa-9820-e73504cefc74" width="80%" height="40%" alt="image"/>
 
 mdn 문서를 통해 Array의 속성과 메서드 확인 결과 prototype이라는 속성이 중간에 들어가 있는 것을 확인할 수 있다.
 
@@ -58,7 +58,7 @@ Prototype을 알아보기 전에 **javascript의 함수와 객체 내부 구조�
 
 - 함수와 객체 내부 구조
 
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/b033ab99-3ac8-4fe7-a482-ae7b214fe8d4)
+![image](https://github.com/hajung00/hajung00.github.io/assets/66300154/c5235961-25ab-4b80-9a44-af864a81666f)
 
 ```javascript
 Function Person(){}
@@ -72,12 +72,12 @@ Function Person(){}
 
 ---
 
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/adb812e2-a519-4106-8136-ebd8f0f1348b)
+![image](https://github.com/hajung00/hajung00.github.io/assets/66300154/5bbe9dd1-929b-4cc1-9574-8289321dca3e)
 
 ```javascript
 Function Person(){}
-Const joon = new Person();
-Const jisoo = new Person();
+const joon = new Person();
+const jisoo = new Person();
 ```
 
 - 프로토타입 객체는 new 연산자와 Person 함수를 통해 생성된 모든 객체의 원형이 되는 객체
@@ -96,17 +96,19 @@ Const jisoo = new Person();
 
 함수를 정의하면 생성되는 객체로 자신이 다른 객체의 원형이 되는 객체를 말한다.
 
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/bcddf7f8-e82a-4294-b053-dccb44c5696e)
+![image](https://github.com/hajung00/hajung00.github.io/assets/66300154/641ed741-1936-4511-80b1-e50980d4c45c)
 
 ```javascript
 Function Person(){}
-Const joon = new Person();
-Const jisoo = new Person()
+const joon = new Person();
+const jisoo = new Person()
+
 Person.prototype.getType = function (){
 Return '사람';
 }
-Console.log(joon.getType()) // 인간
-Console.log(jisoo.getType()) // 인간
+
+console.log(joon.getType()) // 인간
+console.log(jisoo.getType()) // 인간
 ```
 
 - 모든 객체는 프로토타입 객체에 접근 할 수 있다.
@@ -125,7 +127,7 @@ Console.log(jisoo.getType()) // 인간
 
 프로토타입은 크게 두가지로 해석된다.
 
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/c9637fb0-bcb9-4090-9060-eda4eacdf242)
+![image](https://github.com/hajung00/hajung00.github.io/assets/66300154/64086fab-afb2-4af3-8f73-c77a9426044a)
 
 1. 함수의 멤버인 protyotype속성: 프로토타입 객체 참조하는 속성
 

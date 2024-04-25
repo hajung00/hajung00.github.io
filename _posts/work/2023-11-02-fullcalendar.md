@@ -98,10 +98,6 @@ headerToolbar={[
 ]}
 ```
 
-🖥️ 적용 화면
-
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/c84aea4d-9b84-423a-acf1-a108472e90a0)
-
 <br/>
 
 ---
@@ -124,10 +120,6 @@ evnet={schedule.map((data,i)=>{
 })}
 ```
 
-🖥️ 적용 화면
-
-![image](https://github.com/hajung00/React-Sleact/assets/66300154/a18e8365-e2eb-4d81-a8b3-e5b05628534a)
-
 <br/>
 
 ---
@@ -144,25 +136,16 @@ dateClick={(date) => {
 }}
 ```
 
-- date console 확인
-  ![image](https://github.com/hajung00/React-Sleact/assets/66300154/b4be40e6-9a93-4d0e-8386-ddb4b17cfde9)
-
 ### event 1) 날짜 클릭 시, 해당 날짜의 스케줄 list 띄우기
 
 - 클릭한 날짜가 바뀔 때마다 useQuery refetch로 데이터 다시 가져옴
 - 새롭게 가져온 schedule을 list로 띄워줌
-
-- 🖥️ 적용 화면
-  ![image](https://github.com/hajung00/React-Sleact/assets/66300154/5ba6edba-6a69-457e-9c36-a7ab5a1d85ac)
 
 <br/>
 
 ### event 2) 날짜 클릭 시, 해당 날짜에 스케줄 추가 할 수 있도록 modal 열기
 
 - 날짜 클릭 시, 해당 날짜를 일정 추가 모달로 props로 전달하여 기본값으로 설정
-
-- 🖥️ 적용 화면
-  ![image](https://github.com/hajung00/React-Sleact/assets/66300154/b7e48ad6-0e89-47ff-9efb-fbe1d87244af)
 
 <br/>
 
@@ -173,9 +156,6 @@ dateClick={(date) => {
 - 클릭한 날짜가 다음 달인 경우 fullCalendar의 “>” 버튼을 click으로 실행
 - 클릭한 날짜가 day, week, year에도 적용이 되어야함으로 클릭한 날짜가 변경될 때마다
   gotoDate api이용해서 적용되도록 한다.
-
-- 🖥️ 적용 화면
-  ![image](https://github.com/hajung00/React-Sleact/assets/66300154/f92a2ad6-2f0d-4b52-b67e-842bace2bb1c)
 
 <br/>
 
@@ -200,6 +180,3 @@ titleFormat={ function (date) {
    calendarClickDate.split("-")[0] +
    "년 " +)}}
 ```
-
-- 🖥️ 적용 화면
-  ![image](https://github.com/hajung00/React-Sleact/assets/66300154/43f5c452-bc92-4359-8984-ecf410266e7f)

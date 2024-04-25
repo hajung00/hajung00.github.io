@@ -50,15 +50,11 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 
 - 🖥️ 구간 선택 시연 영상
 
-  ![구간 선택 시연 영상](https://github.com/hajung00/React-Sleact/assets/66300154/ad469d04-bda6-4ce7-aa95-8e01dfcda689)
+  ![구간 선택 시연 영상](https://github.com/hajung00/hajung00.github.io/assets/66300154/875f6275-43c1-44bf-855e-1bf37530ef5a)
 
 ### Case1) 같은 지점 클릭 시, 화면에 표시 X
 
 - mouseup시, 시작과 끝점 비교하여 같은 값인지 판별 후 같을 경우 allContent에 추가하지 않아 화면에 표시 안됨.
-
-🖥️ 같은 지점 선택 시연 영상
-
-![같은 지점 클릭](https://github.com/hajung00/React-Sleact/assets/66300154/92de397f-26ea-4ff7-ae49-be30a69afaa4)
 
 ### Case2) 기존에 선택한 구간의 시작, 끝 지점 조정일 경우
 
@@ -75,10 +71,6 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 
   4.  mouseup시, allContent에서 해당 content의 startX, endX 값 변경해줌
 
-🖥️ 구간 조정 시연 영상
-
-![구간 조정](https://github.com/hajung00/React-Sleact/assets/66300154/e06126a0-2c71-4c0a-856e-1a9b284002a7)
-
 ### Case3) 기존 구간을 새로 선택한 구간이 포함하는 경우
 
 1. mouseup시, 클릭한 지점이 allContent의 content에 완전히 포함되는 경우
@@ -89,17 +81,9 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 
 3. 새로 선택한 구간 allContent에 push
 
-🖥️ 구간 포함 시연 영상
-
-![구간 포함](https://github.com/hajung00/React-Sleact/assets/66300154/3d5f2d48-92d9-414f-b2af-dd00cc2e438e)
-
 ### Case4) 이미 선택된 구간의 중간값을 선택할 경우
 
 - mousedown시, 클릭한 지점이 allContent의 하나의 content에 포함되는(중간값) 경우 값 추가 X, 화면에 그리는 부분 실행되지 않도록 설정
-
-🖥️ 중간값 선택 시연 영상
-
-![중간값 선택](https://github.com/hajung00/React-Sleact/assets/66300154/6744fddd-54d8-4fde-9d09-01d887f61b52)
 
 <br/>
 
@@ -113,10 +97,6 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 2. 삭제할 구간을 찾아 allContent에서 제거
 3. 삭제한 구간 화면에서 제거
 
-🖥️ 선택한 구간 삭제 시연 영상
-
-![선택한 구간 삭제](https://github.com/hajung00/React-Sleact/assets/66300154/67a19cf8-9dd6-4c02-a147-ce131ef5fc72)
-
 <br/>
 
 ---
@@ -125,35 +105,34 @@ _[Dygraphs 공식 문서 참조](https://dygraphs.com/)_
 
 > ## 📌 기능3) x축 ->시간, y축 -> 채널 이름
 
-1. ticks 설정하는 부분에서 x축 samplingrate만큼 나누기
+1.  ticks 설정하는 부분에서 x축 samplingrate만큼 나누기
 
-```javascript
-this.xticks.push({
-  pos: pos,
-  label: Math.floor(label / 60) + "s",
-  has_tick: has_tick
-});
-```
+    ```javascript
+    this.xticks.push({
+      pos: pos,
+      label: Math.floor(label / 60) + "s",
+      has_tick: has_tick
+    });
+    ```
 
-2. ticks 설정하는 부분에서 y축 채널 이름으로 변경
+    <br/>
+
+2.  ticks 설정하는 부분에서 y축 채널 이름으로 변경
 
 - 기존에는 그래프의 최대값과 최솟값 사이에서 y를 나타냈으면, y축 나타내는 범위를 최댓값으로 맞춘다.
 
-```javascript
-pct = (yRange[1] - y) / yRange[1];
-```
+  ```javascript
+  pct = (yRange[1] - y) / yRange[1];
+  ```
 
 - y축 나타내는 범위를 채널 수 만큼 나눠서 위치 지정
 
-```javascript
-const distance = axis.computedValueRange[1] / channel.length;
-const ticksChannel = channel.map((item, i) => {
-  var obj = {};
-  obj["v"] = i * distance;
-  obj["label"] = item;
-  return obj;
-});
-```
-
-[적용 화면]
-![image](https://github.com/hajung00/SidePJ-next-node-full-sns/assets/66300154/eda7424c-f3cc-4db5-88bc-b437fc73e8e3)
+  ```javascript
+  const distance = axis.computedValueRange[1] / channel.length;
+  const ticksChannel = channel.map((item, i) => {
+    var obj = {};
+    obj["v"] = i * distance;
+    obj["label"] = item;
+    return obj;
+  });
+  ```
