@@ -2,8 +2,8 @@
 title: 부모, 자식 컴포넌트에서의 useEffect 실행 순서
 author: cotes
 date: 2023-11-15 00:34:00 +0800
-categories: [Work-Devlog, 뇌파 분석 시스템]
-tags: [Work-Devlog, useEffect, 에러 해결]
+categories: [Study, Error Heading]
+tags: [Study, useEffect , life Cycle, Error Heading]
 ---
 
 <!-- 프로젝트 작업하면서 했던 고민, 어떻게 해결했는지에 대한 내용이 담겨져있습니다. -->

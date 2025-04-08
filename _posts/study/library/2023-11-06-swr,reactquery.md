@@ -2,8 +2,8 @@
 title: SWR과 React-Query 비교하기
 author: cotes
 date: 2023-11-06 00:34:00 +0800
-categories: [Work-Devlog, 뇌파 분석 시스템]
-tags: [Work-Devlog, SWR, React-Query]
+categories: [Study, Library]
+tags: [Study, Redux, State Management, Library]
 ---
 
 <!-- 프로젝트 작업하면서 했던 고민, 어떻게 해결했는지에 대한 내용이 담겨져있습니다. -->
